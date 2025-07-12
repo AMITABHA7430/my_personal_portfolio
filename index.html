@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio - Amitabha Ghosh</title>
+  <link rel="stylesheet" href="stylin.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Sidebar -->
+    <nav class="conatine1">
+      <!-- Profile Image -->
+      <img src="images/ag.png.jpeg" alt="Amitabha Ghosh" />
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/amitabha-ghosh-bb132b313" target="_blank">
+          <img src="C:\Users\amita\node_modules\@protobufjs\base64\tests\images\linkedin-logo-png-1853.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/AMITABHA7430" target="_blank">
+          <img src="C:\Users\amita\node_modules\@protobufjs\base64\tests\images\512x512-logo-27170.png" alt="GitHub" />
+        </a>
+        <a href="mailto:amitabhag17@gmail.com">
+          <img src="C:\Users\amita\node_modules\@protobufjs\base64\tests\images\icons8-email-50.png" alt="Email" />
+        </a>
+      </div>
+
+      <!-- Navigation Items -->
+      <div class="div1"><h1>About</h1></div>
+      <div class="div2"><h1>Skills</h1></div>
+      <div class="div3"><h1>Contact</h1></div>
+    </nav>
+
+    <!-- Content Area -->
+    <div class="container2">
+
+      <!-- About Section -->
+      <section class="About active">
+        <h1>About Me</h1>
+        <p>
+          I'm a Computer Science student currently in my 2nd year, always curious and excited about learning new technologies.
+          I enjoy building projects that solve real problems, especially in web development. I’ve been exploring HTML, CSS,
+          JavaScript, and GitHub to bring my ideas to life. I'm now looking for opportunities where I can learn from real-world
+          experience, contribute to meaningful work, and grow as a developer.
+        </p>
+
+        <h2>Professional Experience</h2>
+        <ul>
+          <li>Built a live Weather Web App using HTML, CSS, JavaScript, and OpenWeatherMap API</li>
+          <li>Deployed projects using GitHub Pages</li>
+          <li>Used Git and GitHub for version control</li>
+          <li>Learning JavaScript, responsive design, and debugging</li>
+        </ul>
+
+        <h2>Education</h2>
+        <p><strong>Academy of Technology</strong><br>Bachelor of Technology in Computer Science and Technology</p>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills">
+        <h1>My Skills</h1>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Git & GitHub</li>
+          <li>VS Code / Code Editors</li>
+          <li>Responsive Web Design</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>C Programming</li>
+          <li>Basic SQL / MySQL</li>
+        </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="Contact">
+        <h1>Contact Me</h1>
+        <p><strong>Phone:</strong> 74330933585</p>
+
+        <div class="social-link">
+          <img src="images/email-icon.png" alt="Email Icon" />
+          <a href="mailto:amitabhag17@gmail.com">amitabhag17@gmail.com</a>
+        </div>
+
+        <div class="social-link">
+          <img src="images/github-icon.png" alt="GitHub Icon" />
+          <a href="https://github.com/AMITABHA7430" target="_blank">github.com/AMITABHA7430</a>
+        </div>
+
+        <div class="social-link">
+          <img src="images/linkedin-icon.png" alt="LinkedIn Icon" />
+          <a href="https://www.linkedin.com/in/amitabha-ghosh-bb132b313" target="_blank">
+            linkedin.com/in/amitabha-ghosh-bb132b313
+          </a>
+        </div>
+
+        <p><strong>Location:</strong> Kolkata</p>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- JS Toggle Script -->
+  <script>
+    document.querySelector('.div1').onclick = () => {
+      document.querySelector('.About').classList.add('active');
+      document.querySelector('.skills').classList.remove('active');
+      document.querySelector('.Contact').classList.remove('active');
+    };
+    document.querySelector('.div2').onclick = () => {
+      document.querySelector('.skills').classList.add('active');
+      document.querySelector('.About').classList.remove('active');
+      document.querySelector('.Contact').classList.remove('active');
+    };
+    document.querySelector('.div3').onclick = () => {
+      document.querySelector('.Contact').classList.add('active');
+      document.querySelector('.About').classList.remove('active');
+      document.querySelector('.skills').classList.remove('active');
+    };
+  </script>
+</body>
+</html>
